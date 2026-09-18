@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book a Free Consultation | Catherine Forcier, Birth Doula Manchester NH</title>
+<meta name="description" content="Book a free 15-minute consultation with DONA-certified birth doula Catherine Forcier, serving Manchester and southern New Hampshire.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="index.html">
+      <span class="brand__name">Catherine Forcier</span>
+      <span class="brand__role">Certified Birth Doula</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="testimonials.html">Stories</a>
+      <a href="faq.html">FAQ</a>
+      <a class="btn btn--primary" href="contact.html">Book a free chat</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="section">
+    <div class="wrap">
+      <div class="grid grid--2">
+        <div>
+          <p class="eyebrow">Get in touch</p>
+          <h1>Let&rsquo;s book a free chat</h1>
+          <div class="prose" style="margin-top:1.5rem">
+            <p class="lede">
+              Fifteen minutes on video, no cost and no obligation. You ask me anything you like
+              and get a feel for whether I&rsquo;m the right person to have with you.
+            </p>
+            <p>
+              Most families talk to more than one doula before deciding, and I&rsquo;d encourage
+              that. This matters too much to settle on a person you only half clicked with.
+            </p>
+            <h3>What happens next</h3>
+            <p>
+              Fill in the form and I&rsquo;ll get back to you to find a time that works. If you
+              know your due date and where you&rsquo;re planning to give birth, telling me now
+              saves us both a step &mdash; my availability depends on when you&rsquo;re due.
+            </p>
+          </div>
+          <div class="callout" style="margin-top:2rem">
+            <h3>If you&rsquo;re in labor right now</h3>
+            <p>This form isn&rsquo;t monitored around the clock. Please call your midwife, your
+               OB, or your hospital &mdash; and if this is an emergency, call 911.</p>
+          </div>
+        </div>
+
+        <div>
+          <form class="form" method="POST" action="https://formspree.io/f/REPLACE_WITH_FORM_ID">
+            <div class="field">
+              <label for="name">Your name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="phone">Phone <span class="hint">(optional)</span></label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel">
+            </div>
+            <div class="field">
+              <label for="due">Due date <span class="hint">or your best guess</span></label>
+              <input type="date" id="due" name="due_date">
+            </div>
+            <div class="field">
+              <label for="place">Where are you planning to give birth?</label>
+              <input type="text" id="place" name="birth_place" placeholder="Hospital, birth center, home, or not sure yet">
+            </div>
+            <div class="field">
+              <label for="message">What would you like me to know?</label>
+              <textarea id="message" name="message" placeholder="First baby? Something specific on your mind? Anything at all."></textarea>
+            </div>
+            <div class="field">
+              <label for="heard">How did you hear about me? <span class="hint">(optional)</span></label>
+              <input type="text" id="heard" name="heard_from">
+            </div>
+            <button class="btn btn--primary" type="submit">Request a free consultation</button>
+          </form>
+
+          <div class="todo">
+            <strong>Before this goes live</strong>
+            <p style="margin-top:.5rem">The form needs a real endpoint. Two easy options:
+            create a free <a href="https://formspree.io">Formspree</a> form and paste the ID into
+            the action above, or deploy to Netlify and add <code>data-netlify="true"</code> to
+            the form tag instead &mdash; Netlify then emails submissions with no third party.</p>
+            <p style="margin-top:.5rem">Also needed: Catherine&rsquo;s business email address and
+            the real Facebook page URL (both are placeholders in the footer right now).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>Catherine Forcier</h4>
+        <p>DONA-certified birth doula serving Manchester, Bedford, Goffstown, Hooksett,
+           Concord, Nashua, and the surrounding southern New Hampshire towns.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="birth-doula.html">Birth doula support</a></li>
+          <li><a href="pricing.html">Pricing &amp; payment</a></li>
+          <li><a href="testimonials.html">Stories</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <ul>
+          <li><a href="contact.html">Book a free consultation</a></li>
+          <li><a href="https://www.facebook.com/">Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Catherine Forcier. All rights reserved.</span>
+      <span>Doula support is non-medical. I do not diagnose, treat, or deliver babies.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
