@@ -48,8 +48,9 @@ grep -rn 'class="todo"' *.html
    emailed).
 2. **Email address and real Facebook URL.** Both are placeholders in the footer
    of every page.
-3. **Domain.** Replace `REPLACE-WITH-DOMAIN` in `robots.txt` and `sitemap.xml`,
-   and the `example.com` canonical and Open Graph URLs in `index.html`.
+3. **Domain.** URLs currently point at the GitHub Pages address (see below).
+   When a real domain is registered, update the canonical and Open Graph tags in
+   `index.html`, plus `robots.txt` and `sitemap.xml`.
 
 ### Content Catherine needs to supply
 
@@ -107,9 +108,26 @@ In rough order of return on effort:
 
 ## Deploying
 
-Any static host works. Netlify, Cloudflare Pages and GitHub Pages are all free
-at this size. Point the host at this repo, no build command, publish directory
-is the repo root.
+### Quickest: GitHub Pages (free, this repo is public)
+
+Settings -> Pages -> under "Build and deployment" set Source to *Deploy from a
+branch*, branch `claude/doula-website-research-s9w6rm` (the default branch),
+folder `/ (root)`. Save. It goes live in a minute or two at:
+
+<https://jacobforcier.github.io/DoulaCat/>
+
+All paths in the site are relative, so it works correctly under the `/DoulaCat/`
+subpath. `.nojekyll` is present so Pages serves the files as-is.
+
+Caveat: this is a public URL. Fine for showing Catherine and getting feedback,
+but it's her real name, photos and client reviews on the open web — so treat it
+as a preview, and don't link it anywhere until the TODO items are resolved.
+
+### For the real launch
+
+Netlify or Cloudflare Pages, pointed at this repo. No build command, publish
+directory is the repo root. Both are free at this size, both attach a custom
+domain in a few clicks, and Netlify can handle the contact form natively.
 
 ## Design notes
 
